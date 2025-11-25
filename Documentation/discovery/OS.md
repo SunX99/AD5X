@@ -10,9 +10,14 @@ The purpose of $\text{Zmod}$ creating a new chroot environment is to isolate and
 
 
 Linux kernel executes:
+
 /etc/init.d/rcS which calls-
+
 /etc/init.d/S99Factory_test_shell which calls-
+
 /usr/prog/app_start.sh which was modified with a line to call on-
+
 /usr/data/config/mod/.shell/prepare.sh
+
 
 firmwareExe is called from the original Factory script and is the GUI for the touch screen. 
