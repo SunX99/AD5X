@@ -1,5 +1,5 @@
 Some conversations from Gemini that proved helpful in understanding the firmwares file structure. This was after feeding it all the init.d and S## files and trying to follow the path of what files kick off what software. 
-/usr/data/config/mod/.shell/prepare.sh being the big one that kicks off after the OEM /usr/prog/sys_start.sh calls it.
+/usr/data/config/mod/.shell/prepare.sh being the big one that kicks off after the OEM /usr/prog/app_startup.sh calls it.
 
 The purpose of $\text{Zmod}$ creating a new chroot environment is to isolate and run a custom $\text{Klipper}$ stack (Python, $\text{Moonraker}$, $\text{Mainsail/Fluidd}$) separately from the FlashForge printer's original, proprietary operating system (OS) and user interface ($\text{FirmwareExe}$). This isolation is a sophisticated way to modify the printer without breaking its core functionality.
 
