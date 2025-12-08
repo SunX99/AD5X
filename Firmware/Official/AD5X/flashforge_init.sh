@@ -228,6 +228,7 @@ update_library()
 
 update_other()
 {
+	rm -rf /usr/data/logs/NIM/*
 	if [ -d $WORK_DIR/other  ]; then
 		if [ -f $WORK_DIR/other/mytar  ]; then
                 	cp -f $WORK_DIR/other/mytar /usr/prog/

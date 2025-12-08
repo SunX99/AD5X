@@ -2,9 +2,10 @@ abce4dd879e8cb80d372ff961711af06  ./start.sh
 4787f9ba8ec2c0d4683935825fb7bd50  ./virtual_sdcard.py
 a2dec16517c342873abd5d60c8948b06  ./query_adc.py
 500299a5763e707fcf73f24abd520883  ./sys_start.sh
-2ea44294a5a94b6ffb8b092c1c92b0ce  ./firmwareExe
+ac4e2412e2fab361664c48a5fc7b6fec  ./firmwareExe
 566d9b1c8842af1c21cc7e06a211102f  ./printer.base.cfg
-f7c9f073037d136f8f70136df7e6ad80  ./run.sh
+1333ea8d31200496665eb621075f0914  ./run.sh
+cc30db1fa76ebb2ebf52181639470767  ./freecach.sh
 08ba29718480309e512b6d6c8cadeda3  ./app_startup.sh
 61c0b194408c175aae7c7ac327f3277b  ./extruder.py
-167943e9cc2210bdd8c57835894ea546  ./exclude_object.py
+84b646f300f9f0f022bb11df678b2360  ./exclude_object.py

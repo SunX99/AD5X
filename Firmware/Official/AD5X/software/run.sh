@@ -55,6 +55,7 @@ fi
 
 if [ -f $WORK_DIR/sys_start.sh  ]; then
         cp -f $WORK_DIR/sys_start.sh /usr/prog/
+        cp -f $WORK_DIR/freecach.sh /usr/prog/
 fi
 
 sync
@@ -85,4 +86,6 @@ if [ ${DIR_COUNT} -gt 2 ];then
         rm -r /usr/prog/PROGRAM/software/$VERSION
 fi
 
+rm /usr/data/logs/firmwareExe.core
+sync
 exit 0
