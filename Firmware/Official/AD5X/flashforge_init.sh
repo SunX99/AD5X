@@ -247,7 +247,7 @@ update_other()
 		fi
 
 		if [ -f $WORK_DIR/other/printer.cfg ]; then
-		        cp $WORK_DIR/other/printer.cfg  /usr/data/config/
+		        cp -f $WORK_DIR/other/printer.cfg  /usr/data/config/
 		fi
 		
 		if [ ! -d /usr/prog/libzip-1.10.1 ];then

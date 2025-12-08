@@ -2,7 +2,7 @@ abce4dd879e8cb80d372ff961711af06  ./start.sh
 4787f9ba8ec2c0d4683935825fb7bd50  ./virtual_sdcard.py
 a2dec16517c342873abd5d60c8948b06  ./query_adc.py
 500299a5763e707fcf73f24abd520883  ./sys_start.sh
-ac4e2412e2fab361664c48a5fc7b6fec  ./firmwareExe
+cf4296a05a1e044b7c873ab8dac64509  ./firmwareExe
 566d9b1c8842af1c21cc7e06a211102f  ./printer.base.cfg
 1333ea8d31200496665eb621075f0914  ./run.sh
 cc30db1fa76ebb2ebf52181639470767  ./freecach.sh
