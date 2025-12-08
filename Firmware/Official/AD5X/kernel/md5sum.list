@@ -1,0 +1,9 @@
+9c4f074e01ebf7a87492c87cf520a482  ./local_ota_update.sh
+31353505dd03b61893bf385cec76703e  ./run.sh
+a1854e689c1937f1f947d18349d289d5  ./ota_kernel/ota_config.in
+3c1e454c33f071397e2ffdd3fe559c66  ./ota_kernel/ota_v1/ota_update.in
+0eae9e9bdd619a08a8aee4bb9f84cdc4  ./ota_kernel/ota_v1/xImage.0000.0eae9e9bdd619a08a8aee4bb9f84cdc4
+1d0a22a7d596dcbe343a0c920f551d30  ./ota_kernel/ota_v1/rootfs.squashfs.0000.1d0a22a7d596dcbe343a0c920f551d30
+6e5c0b310b57128cd4923071fed9aa6f  ./ota_kernel/ota_v1/ota_md5_xImage.0eae9e9bdd619a08a8aee4bb9f84cdc4
+d9b6408303bb3c5ad607a54ae3ca140b  ./ota_kernel/ota_v1/ota_md5_rootfs.squashfs.1d0a22a7d596dcbe343a0c920f551d30
+d41d8cd98f00b204e9800998ecf8427e  ./ota_kernel/ota_v1/ota_v1.ok
