@@ -12,7 +12,7 @@ _If Flashforge is so blatently violating the public trust, what other slimy thin
 
 ---
 
-### Filename
+### Updates Filename
 
 It appears as if the filenames are coded with 3 version numbers and a notation if the archive is password protected or not.
 
@@ -28,7 +28,13 @@ _Need to investigate firmware install process to find out how it extracts the ar
 
 ---
 
-### Extract Archives
+### Factory folder
+
+Extracted the Hacks factory tar xz file here (added gitignore)
+
+That way I could compare to the extracted updates below.
+
+### Extract Update Archives
 
 Extract the factory tar gzip files.
 
