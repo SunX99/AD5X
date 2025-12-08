@@ -6,8 +6,8 @@ Flashforge has refused to comply with the GPL license and are stealing others co
 
 > The GNU GPLv3 license allows users to freely use, modify, and distribute software, provided that any distributed modifications are also licensed under GPLv3. **Key requirements include providing the source code, including the full license text, and stating any significant changes made to the original software.**
 
-Many people have these printers without knowing anything about what Flashforge is doing.   
-  
+Many people have these printers without knowing anything about what Flashforge is doing. 
+
 _If Flashforge is so blatently violating the public trust, what other slimy things are they doing?_
 
 ---
@@ -39,6 +39,8 @@ Delete the \*.tar.xz files.
 Rename dirs control-_.tar, kernel-_.tar, library-_.tar and software-_.tar to plain names.
 
 Did the same for the tar files in the other dir. Klippy, libzip, nim.
+
+Commit then to the repo as the version number
 
 ### Compare
 
