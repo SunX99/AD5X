@@ -40,6 +40,9 @@ if [ -f $WORK_DIR/IFSCommand ]; then
 	echo "update ifs"
         cp -f $WORK_DIR/IFSCommand  /usr/prog/PROGRAM/control/
         cp -f $WORK_DIR/ifs.hex  /usr/prog/PROGRAM/control/
+	chmod a+x $WORK_DIR/ifsF37
+	$WORK_DIR/ifsF37 /dev/ttyS4
+	$WORK_DIR/IFSCommand $WORK_DIR/ifs.hex /dev/ttyS4
 fi
 sync
 

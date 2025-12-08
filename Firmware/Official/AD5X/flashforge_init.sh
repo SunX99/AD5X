@@ -239,18 +239,14 @@ update_other()
 		if [ -f $WORK_DIR/other/klippy.tar  ]; then
                 	tar xvf $WORK_DIR/other/klippy.tar  -C /usr/prog/klipper/
                 	sync
-                	cp $WORK_DIR/other/klipperDaemon  /usr/prog/klipper/
-                	cp $WORK_DIR/other/start.sh  /usr/prog/klipper/
-			chmod a+x /usr/prog/klipper/start.sh
         	fi
 
 		if [ -f $WORK_DIR/other/fileSlotId.json ]; then
         		cp -f $WORK_DIR/other/fileSlotId.json /usr/data/config/
 		fi
 
-		if [ -f $WORK_DIR/other/printer.base.cfg ]; then
-        		cp $WORK_DIR/other/printer.base.cfg  /usr/data/config/
-		        #cp $WORK_DIR/other/printer.cfg  /usr/data/config/
+		if [ -f $WORK_DIR/other/printer.cfg ]; then
+		        cp $WORK_DIR/other/printer.cfg  /usr/data/config/
 		fi
 		
 		if [ ! -d /usr/prog/libzip-1.10.1 ];then

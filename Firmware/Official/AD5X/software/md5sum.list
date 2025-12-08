@@ -1,3 +1,7 @@
-d57ee268a39546e387e43fca568581c8  ./firmwareExe
-4965a9cedf8f6577b67e559d6607aefa  ./run.sh
-c369db12d7878b8948bb0ea9b2593d5e  ./app_startup.sh
+abce4dd879e8cb80d372ff961711af06  ./start.sh
+4b7662702df42bba7d040d59caf34699  ./virtual_sdcard.py
+a2dec16517c342873abd5d60c8948b06  ./query_adc.py
+bdbbd01d59ac3a5e3a99dd2584d35f30  ./firmwareExe
+cb83941416b7622164de48c38e7f64e1  ./printer.base.cfg
+79346d1403961046111a3e9471e6a83e  ./run.sh
+4bfdb63c90bbd467d32abe52819f7765  ./app_startup.sh

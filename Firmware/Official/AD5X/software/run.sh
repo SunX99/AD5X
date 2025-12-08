@@ -49,12 +49,24 @@ cp_file()
 	#echo ${DSTFILEMD5}
 }
 
+if [ -f $WORK_DIR/app_startup.sh  ]; then
+        cp -f $WORK_DIR/app_startup.sh /usr/prog/
+fi
+sync
+
 cp $WORK_DIR/firmwareExe /usr/prog/PROGRAM/software/
 sync
 
+if [ ! -d /usr/prog/config  ]; then
+	cp -rf /usr/data/config /usr/prog/
+fi
 
-if [ -f $WORK_DIR/app_startup.sh  ]; then
-	cp -f $WORK_DIR/app_startup.sh /usr/prog/
+if [ -f $WORK_DIR/printer.base.cfg ]; then
+	cp $WORK_DIR/printer.base.cfg  /usr/data/config/
+        cp $WORK_DIR/start.sh  /usr/prog/klipper/
+        cp $WORK_DIR/virtual_sdcard.py  /usr/prog/klipper/klippy/extras/
+        cp $WORK_DIR/query_adc.py  /usr/prog/klipper/klippy/extras/
+	chmod a+x /usr/prog/klipper/start.sh
 fi
 
 cd /usr/prog/PROGRAM/software

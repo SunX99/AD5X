@@ -6,6 +6,9 @@ PID=0026
 #wait for USB
 sleep 2
 
+cmd_gpio set_strength PC15 0
+cmd_gpio set_func PC15 output0
+
 for i in 1 2 3 4;
 do
   if [ ! -e /dev/sda$i ]; then
@@ -101,9 +104,9 @@ if [ -f ${CONTRIL_FLAG} ];then
 	cd ${CONTROL_DIR}${CONTROL_VERSION}
 	./run.sh
 	reboot -f
-else
+#else
 	#/usr/prog/start &
-	/usr/prog/klipper/start.sh &
+#	/usr/prog/klipper/start.sh &
 fi
 
 rm /usr/data/logs/printer.log*
@@ -166,7 +169,7 @@ MAC=`cat /usr/prog/MAC`
 ifconfig eth0 hw ether $MAC
 
 /usr/prog/PROGRAM/software/firmwareExe -1 -D -qws &
-
+sleep 10
 count=`ps |grep firmwareExe |grep -v "grep" |wc -l`
 if [ 0 == $count ];then
 	echo "restart"
