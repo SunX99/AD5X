@@ -24,9 +24,9 @@ fi
 #    exit 1
 #fi
 
-# cp -vf /tmp/test /usr/data/
+# cp -vf /tmp/test /data/
 # $1  源文件路径名 /tmp/test
-# $2  目标路径名   /usr/data/
+# $2  目标路径名   /data/
 cp_file()
 {
 	SRCFILE="$1"
@@ -49,40 +49,20 @@ cp_file()
 	#echo ${DSTFILEMD5}
 }
 
-if [ -f $WORK_DIR/app_startup.sh  ]; then
-        cp -f $WORK_DIR/app_startup.sh /usr/prog/
+
+if [ -f $WORK_DIR/nim.tar ];then
+	tar -xvf $WORK_DIR/nim.tar -C /usr/prog/
+	sync
 fi
 
-if [ -f $WORK_DIR/sys_start.sh  ]; then
-        cp -f $WORK_DIR/sys_start.sh /usr/prog/
-fi
-
-sync
-
-cp $WORK_DIR/firmwareExe /usr/prog/PROGRAM/software/
-sync
-
-if [ ! -d /usr/prog/config  ]; then
-	cp -rf /usr/data/config /usr/prog/
-fi
-
-
-if [ -f $WORK_DIR/printer.base.cfg ]; then
-	cp $WORK_DIR/printer.base.cfg  /usr/data/config/
-        cp $WORK_DIR/start.sh  /usr/prog/klipper/
-        cp $WORK_DIR/virtual_sdcard.py  /usr/prog/klipper/klippy/extras/
-        cp $WORK_DIR/query_adc.py  /usr/prog/klipper/klippy/extras/
-	cp $WORK_DIR/exclude_object.py  /usr/prog/klipper/klippy/extras/
-        cp $WORK_DIR/extruder.py   /usr/prog/klipper/klippy/kinematics/
-	chmod a+x /usr/prog/klipper/start.sh
-fi
-
-cd /usr/prog/PROGRAM/software
+cd /usr/prog/PROGRAM/library/
 DIR_COUNT=`find -maxdepth 1 -type d | wc -l`
+echo $DIR_COUNT
 if [ ${DIR_COUNT} -gt 2 ];then
-        VERSION=`ls -d [0-9]* | sort -V | head -n 1`
-        echo "rm " $VERSION
-        rm -r /usr/prog/PROGRAM/software/$VERSION
+        CONTROL_VERSION=`ls -d [0-9]* | sort -V | head -n 1`
+        echo "rm " $CONTROL_VERSION
+        rm -r /usr/prog/PROGRAM/library/$CONTROL_VERSION
 fi
+
 
 exit 0

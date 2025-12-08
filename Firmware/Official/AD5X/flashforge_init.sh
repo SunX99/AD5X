@@ -288,7 +288,7 @@ update_other
 update_control
 update_kernel
 update_software
-#update_library
+update_library
 
 sync
 cat $WORK_DIR/end.img > /dev/fb0
