@@ -97,16 +97,14 @@ CONTROL_DIR=/usr/prog/PROGRAM/control/
 cd ${CONTROL_DIR}
 CONTROL_VERSION=`ls -d [0-9]* | sort -Vr | head -n 1`
 CONTRIL_FLAG=${CONTROL_DIR}${CONTROL_VERSION}/Update
+CONTRIL_M=${CONTROL_DIR}${CONTROL_VERSION}/UpdateM
 echo "check update control file"
 echo $CONTRIL_FLAG
 
-if [ -f ${CONTRIL_FLAG} ];then
+if [ -f ${CONTRIL_FLAG} ] || [ -f ${CONTRIL_M} ];then
 	cd ${CONTROL_DIR}${CONTROL_VERSION}
 	./run.sh
 	reboot -f
-#else
-	#/usr/prog/start &
-#	/usr/prog/klipper/start.sh &
 fi
 
 rm /usr/data/logs/printer.log*
@@ -167,6 +165,8 @@ ps |grep cfg80211 |grep -v grep |awk '{print "renice -10 " $1}' |sh
 ifconfig eth0 down
 MAC=`cat /usr/prog/MAC`
 ifconfig eth0 hw ether $MAC
+
+/usr/prog/sys_start.sh &
 
 /usr/prog/PROGRAM/software/firmwareExe -1 -D -qws &
 sleep 10

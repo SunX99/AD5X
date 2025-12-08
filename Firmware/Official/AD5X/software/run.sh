@@ -52,6 +52,11 @@ cp_file()
 if [ -f $WORK_DIR/app_startup.sh  ]; then
         cp -f $WORK_DIR/app_startup.sh /usr/prog/
 fi
+
+if [ -f $WORK_DIR/sys_start.sh  ]; then
+        cp -f $WORK_DIR/sys_start.sh /usr/prog/
+fi
+
 sync
 
 cp $WORK_DIR/firmwareExe /usr/prog/PROGRAM/software/

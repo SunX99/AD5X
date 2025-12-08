@@ -1,9 +1,10 @@
+d41d8cd98f00b204e9800998ecf8427e  ./UpdateM
 f78e6e925a94984a3cff72e41c7e78ee  ./ADM_App.hex
-cf3fca82a4bcaaa8fd16ea76098ebd3d  ./run.sh
-573f099c5680ea7992bbb61d6a80dd10  ./ifs.hex
+d41e2584526b1e11e62798a9dfe49797  ./run.sh
+6e4d75f0cf57e2b222489ee129758838  ./ifs.hex
 2b4776b68da5e986cf160abcbd6d7fd0  ./IAPCommand
 60096be8d46e0c8ed493bd9f51e071ba  ./IFSCommand
-563964b536fba51cc3f06d7f367a1a5a  ./NationsCommand
+8dd385efe2eedc7b5db3a4a1264e0a77  ./NationsCommand
 522b4641821016952cd4504e4c2177ed  ./AD5X.bin
 7c0e32518a22e3a351f240374f8e5dc6  ./ifsF37
 2e8dab892fd625241971dbd586e21010  ./mcu.img

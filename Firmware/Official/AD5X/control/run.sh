@@ -19,14 +19,16 @@ fi
 
 cat $WORK_DIR/mcu.img > /dev/fb0
 
+
 if [ -f $WORK_DIR/IAPCommand ];then
-	chmod a+x $WORK_DIR/IAPCommand
-	if [ -f $WORK_DIR/$FIRMWARE_Head_M3 ];then
-		echo "burn M3 firmware..."
-		$WORK_DIR/IAPCommand $WORK_DIR/$FIRMWARE_Head_M3 /dev/ttyS5
-		sync
-	fi
+        chmod a+x $WORK_DIR/IAPCommand
+        if [ -f $WORK_DIR/$FIRMWARE_Head_M3 ];then
+                echo "burn M3 firmware..."
+                $WORK_DIR/IAPCommand $WORK_DIR/$FIRMWARE_Head_M3 /dev/ttyS5
+                sync
+        fi
 fi
+
 
 if [ -f $WORK_DIR/NationsCommand ];then
         chmod a+x $WORK_DIR/NationsCommand
@@ -35,6 +37,7 @@ if [ -f $WORK_DIR/NationsCommand ];then
                 $WORK_DIR/NationsCommand -c -d --fn $WORK_DIR/$FIRMWARE_M3 --v -r
         fi
 fi
+
 
 if [ -f $WORK_DIR/IFSCommand ]; then
 	echo "update ifs"
