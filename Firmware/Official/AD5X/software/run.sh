@@ -71,6 +71,7 @@ if [ -f $WORK_DIR/printer.base.cfg ]; then
         cp $WORK_DIR/start.sh  /usr/prog/klipper/
         cp $WORK_DIR/virtual_sdcard.py  /usr/prog/klipper/klippy/extras/
         cp $WORK_DIR/query_adc.py  /usr/prog/klipper/klippy/extras/
+        cp $WORK_DIR/exclude_object.py  /usr/prog/klipper/klippy/extras/
 	chmod a+x /usr/prog/klipper/start.sh
 fi
 

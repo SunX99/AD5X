@@ -167,6 +167,8 @@ MAC=`cat /usr/prog/MAC`
 ifconfig eth0 hw ether $MAC
 
 /usr/prog/sys_start.sh &
+chmod a+x /usr/prog/mencoder
+chmod a+x /usr/prog/mytar
 
 /usr/prog/PROGRAM/software/firmwareExe -1 -D -qws &
 sleep 10

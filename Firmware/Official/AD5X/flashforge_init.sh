@@ -1,5 +1,5 @@
 #!/bin/sh
-set -x
+#set -x
 
 WORK_DIR=`dirname $0`
 RUN_DIR="/usr/prog/PROGRAM"
