@@ -38,9 +38,9 @@ Delete the \*.tar.xz files.
 
 Rename dirs control-_.tar, kernel-_.tar, library-_.tar and software-_.tar to plain names.
 
-Did the same for the tar files in the other dir. Klippy, libzip, nim.
+Extract tar files in the other dir. Klippy, libzip, nim (maybe forgot some ver.)
 
-Commit then to the repo as the version number
+Commit then to the repo as the version number.
 
 ### Compare
 
@@ -69,10 +69,12 @@ srec_cat ifs.hex -Intel -o ifs.bin -Binary
 ```
 
 ```
-ADM_App.hex        # Likely a bootloader/IAP image for the M3 MCU  
+ADM_App.hex        # Likely a bootloader/IAP image for the M3 MCU  (klipper)
 AD5X.bin           # Main M3 application firmware (binary)  
 IAPCommand         # pushes ADM\_App.hex to MCU over UART /dev/ttyS5  
 NationsCommand     # flash utility for Nations Microcontroller (N32/NMI)  
-ifsF37             # prepares the bus/device (switches into boot mode)  
+ifsF37             # prepares the bus/device (switches into boot mode)
+ifs.hex            # ifs firmware?
 IFSCommand         # burns ifs.hex to the IFS controller via UART /dev/ttyS4
+*.img              # images for the lcd screen for status update
 ```
