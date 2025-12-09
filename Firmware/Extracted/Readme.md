@@ -48,12 +48,13 @@ Extract tar files in the other dir. Klippy, libzip, nim (maybe forgot some ver.)
 
 Commit then to the repo as the version number.
 
-### Compare
+### Compare updates
 
 Running compare on these dirs to find the changes and learn.
 
-Once I get the password on the non-factory files  
-I will commit them to a repo so I can walk through the updates.
+~~Once I get the password on the non-factory files~~
+~~I will commit them to a repo so I can walk through the updates.~~
+Committed each factory as their version to the repo. I may want to eventually create a new repo for the firmware. For now I am keeping everything in the same folder. 
 
 ---
 
@@ -83,4 +84,5 @@ ifsF37             # prepares the bus/device (switches into boot mode)
 ifs.hex            # ifs firmware?
 IFSCommand         # burns ifs.hex to the IFS controller via UART /dev/ttyS4
 *.img              # images for the lcd screen for status update
+
 ```
