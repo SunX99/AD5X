@@ -15,8 +15,9 @@
 
 # Releases
 
+*   [Firmware\_1.2.0-1.1.1](AD5X-1.2.0-1.1.1-3.0.7-20251212.tgz) _(Password protected)_
 *   [Firmware\_1.1.9-1.1.1](AD5X-1.1.9-1.1.1-3.0.7-20251201-Factory.tgz)
-*   [Firmware\_1.1.9-1.1.1](AD5X-1.1.9-1.1.0-3.0.6-20251107-Factory.tgz)
+*   [Firmware\_1.1.9-1.1.0](AD5X-1.1.9-1.1.0-3.0.6-20251107-Factory.tgz)
 *   [Firmware\_1.1.7-1.1.0](AD5X-1.1.7-1.1.0-3.0.6-20250912-Factory.tgz)
 *   [Firmware\_1.1.6-1.1.0](AD5X-1.1.6-1.1.0-3.0.6-20250729.tgz) _(Password protected)_
 *   [Firmware\_1.1.5-1.0.9](AD5X-1.1.5-1.0.9-3.0.6-20250718-Factory.tgz)
