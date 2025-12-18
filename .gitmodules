@@ -1,0 +1,3 @@
+[submodule "Models/Exhaust Fan"]
+	path = Models/Exhaust Fan
+	url = https://github.com/john-clark/AD5X-Exhaust-Fan-Mod
